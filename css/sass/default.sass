@@ -1,0 +1,56 @@
+// Default Setting and Modules Import
+@import partials/_base
+@import normalize.min.css
+
+//Customized Setting
+@import main.css
+body
+	font-family: $ff_serif
+	font-size: $font-size
+	line-height: $line-height
+	// letter-spacing: $letter-spacing
+	
+	background-color: $background-color
+	color: $text-color
+	a 
+		color: $link-color
+		text-decoration: none
+		&:hover
+			color: $link_hover-color 
+		// &:visited
+		// 	color: $link_click-color
+
+.wrapper
+	width: 90%
+	margin: 0% 5%
+
+/* Theme Color */
+.header-container,
+.footer-container,
+.main aside 
+	background-color: $header-color
+
+.header-container
+	border-bottom: 1.2em solid lighten($link-color, 15%)
+.footer-container,
+.main aside
+	border-top: 1.2em solid lighten($link-color, 15%)
+
+.title
+	color: rgba(255,255,255,1)
+
+/* Menu */
+nav a
+	// background-color: $hot-color
+	display: block
+	padding: 15px 0
+	text-align: center
+	font-weight: bold
+	color: rgba(255,255,255,1)
+	&:hover
+		text-decoration: none
+
+
+
+
+
