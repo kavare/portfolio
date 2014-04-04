@@ -40,6 +40,16 @@ body a:hover {
 }
 
 /* Mobile Menu */
+nav ul {
+  margin-top: 3.5%;
+}
+
+nav ul,
+nav ul li {
+  overflow: auto;
+  _width: 100;
+}
+
 nav a {
   display: block;
   padding: 15px 0;
@@ -73,10 +83,8 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
   nav a {
-    float: left;
-    width: 27%;
+    display: block;
     margin: 0 1.7%;
-    padding: 25px 2%;
     margin-bottom: 0px;
   }
 
@@ -87,9 +95,9 @@ nav a:hover {
     margin-right: 0px;
   }
 
-  /* IE Fixes */
   nav ul li {
-    display: inline;
+    float: left;
+    min-width: 110px;
   }
 
   .oldie nav a {
@@ -113,7 +121,6 @@ nav a:hover {
 
   nav {
     float: right;
-    width: 38%;
   }
 
   /* Wide Main */

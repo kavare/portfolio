@@ -1,18 +1,20 @@
 @media only screen and (min-width: 480px)
-	nav a
-		float: left
-		width: 27%
+	nav a		
+		display: block
 		margin: 0 1.7%
-		padding: 25px 2%
 		margin-bottom: 0px
+
 	nav li
 		&:first-child a
 			margin-left: 0px
 		&:last-child a
 			margin-right: 0px
-	/* IE Fixes */
+
 	nav ul li
-		display: inline
+		display:inline-block
+		float: left		
+		min-width: 110px
+
 	.oldie nav a
 		margin: 0 0.7% 
 
@@ -28,7 +30,7 @@
 			
 	nav
 		float: right
-		width: 38%
+		// width: 38%
 
 	/* Wide Main*/ 
 	.main article
