@@ -1,0 +1,48 @@
+@media only screen and (min-width: 480px)
+	nav a
+		float: left
+		width: 27%
+		margin: 0 1.7%
+		padding: 25px 2%
+		margin-bottom: 0px
+	nav li
+		&:first-child a
+			margin-left: 0px
+		&:last-child a
+			margin-right: 0px
+	/* IE Fixes */
+	nav ul li
+		display: inline
+	.oldie nav a
+		margin: 0 0.7% 
+
+@media only screen and (min-width: 768px)
+	.header-container,
+	.main aside
+		+pie
+		+box-shadow(0 5px 10px #aaa)
+
+	/* Wide Menu*/ 
+	.title
+		float: left	
+			
+	nav
+		float: right
+		width: 38%
+
+	/* Wide Main*/ 
+	.main article
+		float: left
+		width: 57%
+
+	.main aside
+		float: right
+		width: 28%
+
+
+@media only screen and (min-width: 1140px)
+	.wrapper
+		width: 1026px
+		margin: 0 auto
+
+
