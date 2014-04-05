@@ -1,4 +1,4 @@
-@import url(normalize.min.css);
+@import url(vendor/normalize.min.css);
 body {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", "Songti SC", "Hiragino Mincho ProN", PMingLiU, serif;
   font-size: 16px;
@@ -35,31 +35,17 @@ body a:hover {
   border-top: 20px solid #1d75e4;
 }
 
+.main-container {
+  position: absolute;
+  left: 50px;
+  margin-right: 200px;
+}
+.main-container img {
+  float: right;
+}
+
 .title {
   color: white;
-}
-
-/* Mobile Menu */
-nav ul {
-  margin-top: 3.5%;
-}
-
-nav ul,
-nav ul li {
-  overflow: auto;
-  _width: 100;
-}
-
-nav a {
-  display: block;
-  padding: 15px 0;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-}
-nav a:hover {
-  text-decoration: none;
-  font-size: 1.2em;
 }
 
 /* Mobile Main */
@@ -81,65 +67,99 @@ nav a:hover {
   padding: 20px 0;
 }
 
-@media only screen and (min-width: 480px) {
-  nav a {
-    display: block;
-    margin: 0 1.7%;
-    margin-bottom: 0px;
-  }
-
-  nav li:first-child a {
-    margin-left: 0px;
-  }
-  nav li:last-child a {
-    margin-right: 0px;
-  }
-
-  nav ul li {
-    float: left;
-    min-width: 110px;
-  }
-
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
+.header-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  overflow: hidden;
+  cursor: default;
+  color: #c8c8c8;
+  background: #ffd464;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-@media only screen and (min-width: 768px) {
-  .header-container,
-  .main aside {
-    behavior: url('PIE.htc');
-    position: relative;
-    -webkit-box-shadow: 0 5px 10px #aaaaaa;
-    -moz-box-shadow: 0 5px 10px #aaaaaa;
-    box-shadow: 0 5px 10px #aaaaaa;
-  }
-
-  /* Wide Menu */
-  .title {
-    float: left;
-  }
-
-  nav {
-    float: right;
-  }
-
-  /* Wide Main */
-  .main article {
-    float: left;
-    width: 57%;
-  }
-
-  .main aside {
-    float: right;
-    width: 28%;
-  }
+.header-container nav ul {
+  padding: 0;
+  margin: 0;
 }
-@media only screen and (min-width: 1140px) {
-  .wrapper {
-    width: 1026px;
-    margin: 0 auto;
-  }
+.header-container nav li {
+  border-bottom: 1px solid #ffe297;
+  overflow: hidden;
 }
+.header-container nav li.breakspace {
+  margin-top: 60px;
+  border-top: 1px solid #ffe297;
+}
+.header-container nav a {
+  display: block;
+  width: 200px;
+  padding: 15px 0px;
+  color: white;
+}
+.header-container nav a:hover {
+  text-decoration: none;
+  -webkit-transition: all ease;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: all ease 0.28s;
+  -o-transition: all ease 0.28s;
+  transition: all ease 0.28s;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  color: #619fed;
+}
+.header-container nav a span {
+  margin-left: 20px;
+}
+
+/* Applying javascript to bind hover event */
+.header-container.is-expanded {
+  -webkit-transition: width ease-in-out;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: width ease-in-out 0.28s;
+  -o-transition: width ease-in-out 0.28s;
+  transition: width ease-in-out 0.28s;
+  width: 200px;
+}
+
+.header-container {
+  -webkit-transition: width ease-in-out;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: width ease-in-out 0.28s;
+  -o-transition: width ease-in-out 0.28s;
+  transition: width ease-in-out 0.28s;
+}
+
+.main-container.is-translated {
+  -webkit-transition: all ease-in-out;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: all ease-in-out 0.28s;
+  -o-transition: all ease-in-out 0.28s;
+  transition: all ease-in-out 0.28s;
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+.main-container {
+  -webkit-transition: all ease-in-out;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: all ease-in-out 0.28s;
+  -o-transition: all ease-in-out 0.28s;
+  transition: all ease-in-out 0.28s;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
 @media print {
   * {
     background: transparent !important;
