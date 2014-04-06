@@ -1,3 +1,5 @@
+@import partials/_base
+
 body
 	font-family: $ff_serif
 	font-size: $font-size
@@ -9,10 +11,10 @@ body
 	a 
 		color: $link-color
 		text-decoration: none
+		font-family: nth($ff_head, 2)
 		&:hover
 			color: $link_hover-color 
-		// &:visited
-		// 	color: $link_click-color
+		
 
 .wrapper
 	width: 90%
@@ -34,7 +36,7 @@ body
 .main-container
 	position: absolute
 	left: 50px	
-	
+
 
 
 .title

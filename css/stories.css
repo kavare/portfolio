@@ -2,15 +2,15 @@
 .main-container {
   width: 95%;
 }
-.main-container h1 {
-  font-size: 300%;
-  font-family: "Sanchez";
-  color: #fb6964;
-}
 .main-container article {
   font-size: 125%;
   width: 70%;
   margin: 0 auto;
+}
+.main-container article h1 {
+  font-size: 240%;
+  font-family: "Sanchez";
+  color: #fb6964;
 }
 .main-container article section h2 {
   font-family: "Sanchez";
