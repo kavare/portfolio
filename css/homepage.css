@@ -4,28 +4,15 @@
   font-family: "Sanchez";
   color: #fb6964;
   margin: 15% 15% 0 0;
+  line-height: 1.4;
 }
 .main-container img[alt="rawant"] {
   float: right;
   margin-right: -5%;
   margin-top: 3%;
 }
-.main-container article h2 {
+.main-container h2 {
   font-size: 150%;
-  margin-left: 70%;
+  margin-left: 63%;
   color: #1352a2;
-}
-.main-container article p {
-  background-color: white;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  border-radius: 25px;
-  font-size: 125%;
-  width: 50%;
-  padding: 50px 25px;
-}
-.main-container footer img {
-  float: left;
 }

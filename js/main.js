@@ -1,5 +1,6 @@
+//Sidebar sliding using toggle class to realize. Classes are defined in modules/_sidenav.sass
 
-$(function(){
+$(function() {
 	$('.header-container').hover(		
 	function(event) {
 		var $this = $(this),
@@ -21,3 +22,13 @@ $(function(){
 	});
 });
 
+
+//Applying jQuery Timelinr. 
+$(function(){
+	$().timelinr({
+		issuesSpeed: 	300,
+		datesSpeed: 	100,
+		arrowKeys: 		'true',
+		startAt:		3
+	})
+});
