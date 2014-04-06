@@ -6,6 +6,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: #f0f1ee;
+  background-image: linear-gradient(180deg, #ffffff 2px, transparent 2px, transparent 3px, #ffffff 3px, #ffffff 4px, transparent 4px, transparent 5px, #ffffff 5px, #ffffff 6px, transparent 6px, transparent 7px, #ffffff 7px, #ffffff 8px, transparent 8px, transparent 9px, #ffffff 9px, #ffffff 10px, transparent 10px, transparent 11px, #ffffff 11px, #ffffff 12px, transparent 12px, transparent 13px, #ffffff 13px, #ffffff 14px, transparent 14px, transparent 15px, #ffffff 15px, #ffffff 16px, transparent 16px, transparent 17px, #ffffff 17px, #ffffff 18px, transparent 18px, transparent 19px, #ffffff 19px, #ffffff 20px, transparent 20px, transparent 21px, #ffffff 21px, #ffffff 22px, transparent 22px, transparent 23px, #ffffff 23px, #ffffff 24px, transparent 24px, transparent 25px, #ffffff 25px, #ffffff 26px), linear-gradient(90deg, #ffffff 2px, transparent 2px, transparent 3px, #ffffff 3px, #ffffff 4px, transparent 4px, transparent 5px, #ffffff 5px, #ffffff 6px, transparent 6px, transparent 7px, #ffffff 7px, #ffffff 8px, transparent 8px, transparent 9px, #ffffff 9px, #ffffff 10px, transparent 10px, transparent 11px, #ffffff 11px, #ffffff 12px, transparent 12px, transparent 13px, #ffffff 13px, #ffffff 14px, transparent 14px, transparent 15px, #ffffff 15px, #ffffff 16px, transparent 16px, transparent 17px, #ffffff 17px, #ffffff 18px, transparent 18px, transparent 19px, #ffffff 19px, #ffffff 20px, transparent 20px, transparent 21px, #ffffff 21px, #ffffff 22px, transparent 22px, transparent 23px, #ffffff 23px, #ffffff 24px, transparent 24px, transparent 25px, #ffffff 25px, #ffffff 26px);
+  background-size: 26px 26px;
   color: #333332;
 }
 body a {

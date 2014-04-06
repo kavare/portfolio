@@ -1,4 +1,10 @@
 @import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez);
+/* Customized Setting in Exp.html for Timelinzr issue */
+body {
+  background-image: linear-gradient(180deg, #f0f1ee 2px, transparent 2px, transparent 3px, #f0f1ee 3px, #f0f1ee 4px, transparent 4px, transparent 5px, #f0f1ee 5px, #f0f1ee 6px, transparent 6px, transparent 7px, #f0f1ee 7px, #f0f1ee 8px, transparent 8px, transparent 9px, #f0f1ee 9px, #f0f1ee 10px, transparent 10px, transparent 11px, #f0f1ee 11px, #f0f1ee 12px, transparent 12px, transparent 13px, #f0f1ee 13px, #f0f1ee 14px, transparent 14px, transparent 15px, #f0f1ee 15px, #f0f1ee 16px, transparent 16px, transparent 17px, #f0f1ee 17px, #f0f1ee 18px, transparent 18px, transparent 19px, #f0f1ee 19px, #f0f1ee 20px, transparent 20px, transparent 21px, #f0f1ee 21px, #f0f1ee 22px, transparent 22px, transparent 23px, #f0f1ee 23px, #f0f1ee 24px, transparent 24px, transparent 25px, #f0f1ee 25px, #f0f1ee 26px), linear-gradient(90deg, #f0f1ee 2px, transparent 2px, transparent 3px, #f0f1ee 3px, #f0f1ee 4px, transparent 4px, transparent 5px, #f0f1ee 5px, #f0f1ee 6px, transparent 6px, transparent 7px, #f0f1ee 7px, #f0f1ee 8px, transparent 8px, transparent 9px, #f0f1ee 9px, #f0f1ee 10px, transparent 10px, transparent 11px, #f0f1ee 11px, #f0f1ee 12px, transparent 12px, transparent 13px, #f0f1ee 13px, #f0f1ee 14px, transparent 14px, transparent 15px, #f0f1ee 15px, #f0f1ee 16px, transparent 16px, transparent 17px, #f0f1ee 17px, #f0f1ee 18px, transparent 18px, transparent 19px, #f0f1ee 19px, #f0f1ee 20px, transparent 20px, transparent 21px, #f0f1ee 21px, #f0f1ee 22px, transparent 22px, transparent 23px, #f0f1ee 23px, #f0f1ee 24px, transparent 24px, transparent 25px, #f0f1ee 25px, #f0f1ee 26px);
+  background-size: 26px 26px;
+}
+
 .main-container {
   width: 95%;
 }
