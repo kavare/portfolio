@@ -21,14 +21,3 @@ $(function() {
 		event.stopProporgation; 
 	});
 });
-
-
-//Applying jQuery Timelinr. 
-$(function(){
-	$().timelinr({
-		issuesSpeed: 	300,
-		datesSpeed: 	100,
-		arrowKeys: 		'true',
-		startAt:		1
-	})
-});

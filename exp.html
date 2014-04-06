@@ -13,11 +13,7 @@
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="css/default.css">        
         <link rel="stylesheet" href="css/exp.css">
-
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/"></script>
-        <script src="js/vendor/"></script>
-        <script src="js/vendor/"></script>        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -129,12 +125,25 @@
             </footer> -->
         </div> <!-- #main-container -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
         <script src="js/vendor/jquery.timelinr-0.9.54.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            //Applying jQuery Timelinr. 
+            $(function(){
+                $().timelinr({
+                    issuesSpeed:    300,
+                    datesSpeed:     100,
+                    arrowKeys:      'true',
+                    startAt:        4,
+                    autoPlay:       'true',
+                    autoPlayPause:  5000 
+                })
+            });
+
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
