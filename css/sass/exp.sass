@@ -2,15 +2,14 @@
 
 /* Customized Setting in Exp.html for Timelinzr issue */
 body
-	+BGPattern-blocker($background-color)
+	// +BGPattern-blocker($background-color)
 
 .main-container
 	width: 95%
 	h1
 		font-size: 300%
 		font-family: nth($ff_head, 3)
-		color: $hot-color
-		margin:  1% 5% 2%
+		color: $hot-color		
 		line-height: $lh-head
 		
 
@@ -72,7 +71,7 @@ $tldefault_issueheight: $tldefault_height - 150px
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)" /* IE 8 */   
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)/* IE 6 & 7 */      
 			zoom: 1
-			+transition(all 2s ease-in-out)
+			+transition(all 1s ease-in-out)
 			+transform(scale(0.7,0.7))
 				
 		h2
@@ -104,12 +103,12 @@ $tldefault_issueheight: $tldefault_height - 150px
 
 #grad_left
 	left: 0
-	+background(linear-gradient(left, $background-color, rgba($background-color, .5)))
+	+background(linear-gradient(left, rgba($background-color, 1), rgba($background-color, .8)))
 	
 
 #grad_right
-	right: 0
-	+background(linear-gradient(right, $background-color, rgba($background-color, .5)))
+	right: 1
+	+background(linear-gradient(right, rgba($background-color, 1), rgba($background-color, .8)))
 			
 #next,
 #prev

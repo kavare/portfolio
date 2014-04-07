@@ -1,10 +1,5 @@
 @import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez);
 /* Customized Setting in Exp.html for Timelinzr issue */
-body {
-  background-image: linear-gradient(180deg, #f0f1ee 2px, transparent 2px, transparent 3px, #f0f1ee 3px, #f0f1ee 4px, transparent 4px, transparent 5px, #f0f1ee 5px, #f0f1ee 6px, transparent 6px, transparent 7px, #f0f1ee 7px, #f0f1ee 8px, transparent 8px, transparent 9px, #f0f1ee 9px, #f0f1ee 10px, transparent 10px, transparent 11px, #f0f1ee 11px, #f0f1ee 12px, transparent 12px, transparent 13px, #f0f1ee 13px, #f0f1ee 14px, transparent 14px, transparent 15px, #f0f1ee 15px, #f0f1ee 16px, transparent 16px, transparent 17px, #f0f1ee 17px, #f0f1ee 18px, transparent 18px, transparent 19px, #f0f1ee 19px, #f0f1ee 20px, transparent 20px, transparent 21px, #f0f1ee 21px, #f0f1ee 22px, transparent 22px, transparent 23px, #f0f1ee 23px, #f0f1ee 24px, transparent 24px, transparent 25px, #f0f1ee 25px, #f0f1ee 26px), linear-gradient(90deg, #f0f1ee 2px, transparent 2px, transparent 3px, #f0f1ee 3px, #f0f1ee 4px, transparent 4px, transparent 5px, #f0f1ee 5px, #f0f1ee 6px, transparent 6px, transparent 7px, #f0f1ee 7px, #f0f1ee 8px, transparent 8px, transparent 9px, #f0f1ee 9px, #f0f1ee 10px, transparent 10px, transparent 11px, #f0f1ee 11px, #f0f1ee 12px, transparent 12px, transparent 13px, #f0f1ee 13px, #f0f1ee 14px, transparent 14px, transparent 15px, #f0f1ee 15px, #f0f1ee 16px, transparent 16px, transparent 17px, #f0f1ee 17px, #f0f1ee 18px, transparent 18px, transparent 19px, #f0f1ee 19px, #f0f1ee 20px, transparent 20px, transparent 21px, #f0f1ee 21px, #f0f1ee 22px, transparent 22px, transparent 23px, #f0f1ee 23px, #f0f1ee 24px, transparent 24px, transparent 25px, #f0f1ee 25px, #f0f1ee 26px);
-  background-size: 26px 26px;
-}
-
 .main-container {
   width: 95%;
 }
@@ -12,7 +7,6 @@ body {
   font-size: 300%;
   font-family: "Sanchez";
   color: #fb6964;
-  margin: 1% 5% 2%;
   line-height: 1.4;
 }
 
@@ -71,10 +65,10 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
   zoom: 1;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: scale(0.7, 0.7);
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
@@ -113,22 +107,22 @@ body {
 
 #grad_left {
   left: 0;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.5)));
-  background: -webkit-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: -moz-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: -o-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.5));
-  -pie-background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.5));
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
+  background: -webkit-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -moz-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -o-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
+  -pie-background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
 }
 
 #grad_right {
-  right: 0;
-  background: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.5)));
-  background: -webkit-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: -moz-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: -o-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.5));
-  -pie-background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.5));
-  background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.5));
+  right: 1;
+  background: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
+  background: -webkit-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -moz-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -o-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
+  -pie-background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
 }
 
 #next,
