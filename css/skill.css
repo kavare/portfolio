@@ -193,3 +193,18 @@ div.items div.item.on {
 .icon {
   display: none;
 }
+
+/* Media Query Limited to Dribble-menu */
+@media only screen and (max-width: 768px) {
+  div.dribble-menu ul li {
+    width: 45%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (min-width: 954px) {
+  div.items div.item {
+    padding: 4.2% 2.4%;
+    margin: 0.1%;
+    width: 45%;
+  }
+}

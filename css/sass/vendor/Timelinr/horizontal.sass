@@ -1,4 +1,13 @@
 @import partials/_base
+
+/* Customized Setting in Exp.html for Timelinr issue */
+.main-container
+	width: 95%
+
+	h1
+		margin-top: 5%
+		
+
 /* jQuery TimeLinr Sass Modification */
 $tldefault_width: 900px
 $tldefault_height: 600px
@@ -10,7 +19,7 @@ $tldefault_issueheight: $tldefault_height - 150px
 	overflow: hidden
 	margin: 0 auto
 	position: relative
-	background: url('../img/dot.gif') left 61px repeat-x
+	background: url('/img/dot.gif') left 61px repeat-x
 
 
 #dates
@@ -25,7 +34,7 @@ $tldefault_issueheight: $tldefault_height - 150px
 		height: 50px
 		font-size: 24px
 		text-align: center
-		background: url('../img/biggerdot.png') center bottom no-repeat
+		background: url('/img/biggerdot.png') center bottom no-repeat
 
 	a
 		font-family: nth($ff_head, 2)
@@ -111,14 +120,18 @@ $tldefault_issueheight: $tldefault_height - 150px
 
 #next
 	right: 0
-	background-image: url('../img/next.png')
+	background-image: url('/img/next.png')
 	background-position: 0 -76px
 
 #prev
 	left: 0
-	background-image: url('../img/prev.png')
+	background-image: url('/img/prev.png')
 	background-position: 0 -76px
 
 #next.disabled,
 #prev.disabled
 	opacity: 0.2
+	
+
+
+
