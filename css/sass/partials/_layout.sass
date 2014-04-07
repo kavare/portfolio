@@ -1,0 +1,61 @@
+@import partials/_base
+
+body
+	font-family: $ff_serif
+	font-size: $font-size
+	line-height: $line-height
+	// letter-spacing: $letter-spacing
+	
+	background-color: $background-color	
+	+BGPattern-blocker(lighten($background-color, 30%))
+
+	color: $text-color
+	a 
+		color: $link-color
+		text-decoration: none
+		font-family: nth($ff_head, 2)
+		&:hover
+			color: $link_hover-color 
+		
+
+.wrapper
+	width: 90%
+	margin: 0% 5%
+
+/* Theme Color */
+.header-container,
+.footer-container,
+.main aside 
+	background-color: $header-color
+
+.header-container
+	border-bottom: 20px solid lighten($link-color, 15%)
+
+.footer-container,
+.main aside
+	border-top: 20px solid lighten($link-color, 15%)
+
+.main-container
+	position: absolute
+	left: 50px	
+
+
+
+.title
+	color: rgba(255,255,255,1)
+
+
+/* Mobile Main */
+.main
+	padding: 30px 0px
+
+.main article h1
+	font-size: 2em
+
+.main aside
+	color: rgba(255,255,255,1)
+	padding: 0px 5% 10px
+
+.footer-container footer
+	color: rgba(255,255,255,1)
+	padding: 20px 0

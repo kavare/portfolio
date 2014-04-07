@@ -1,0 +1,47 @@
+/* Helper Class */ 
+%clearfix  
+	&:before  
+		content: ""  
+		display: table  
+	&:after  
+		content: ""  
+		display: table  
+		clear: both  
+	zoom: 1 
+
+%hidden
+	display: none !important
+	visibility: hidden
+
+%visuallyhidden
+	border: 0
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+
+%focusable
+	&:active, &:focus
+		clip: auto
+		height: auto
+		width: auto
+		margin: 0px
+		overflow: visible
+		position: static
+
+/* Image Replacement */
+%ir
+	background-color: transparent
+	border: 0px
+	overflow: hidden
+	*text-indent: -9999px
+	&:before
+		content: ""
+		display: block
+		width: 0px
+		height: 150%
+
+

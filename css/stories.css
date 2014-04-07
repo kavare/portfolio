@@ -1,0 +1,38 @@
+@import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez);
+.main-container {
+  width: 95%;
+}
+.main-container article {
+  font-size: 125%;
+  width: 70%;
+  margin: 0 auto;
+}
+.main-container article h1 {
+  font-size: 240%;
+  font-family: "Sanchez";
+  color: #fb6964;
+}
+.main-container article section h2 {
+  font-family: "Sanchez";
+  color: #1352a2;
+  margin-top: 2.5em;
+  margin-bottom: -0.5em;
+}
+.main-container article header, .main-container article footer {
+  padding: 1em 2em;
+  background-color: white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+.main-container article h2 {
+  font-family: "Russo One";
+  color: #fb6964;
+}
+.main-container img {
+  position: relative;
+  left: -160px;
+  top: -40px;
+}

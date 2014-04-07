@@ -1,0 +1,47 @@
+//Palette Theme
+// Lorenzo Verzini----------
+// Gray: #F0F1EE, (240,241,238)
+// Black: #333332, (51,51,50)
+// Navy: #1352A2, (19,82,162)
+// Yello: #FFD464 (255,212,100)'
+// Red: #FB6964 (251,105,100)
+// --------------------------
+
+//Default Import
+@import compass/css3
+@import compass/css3/pie
+@import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez)
+
+// Global Variables
+$wrapper_width: 980px
+$background-color: rgba(240,241,238,1)
+$header-color: rgba(255,212,100,1)
+$text-color: rgba(51,51,50,1)
+$hot-color: rgba(251,105,100,1)
+$link-color: rgba(19,82,162,1)
+$link_hover-color: lighten($link-color, 30%)
+$link_click-color: darken($link-color, 30%)
+$font-size: 16px
+$ff_serif: Georgia, Times, "Times New Roman", "Songti SC","Hiragino Mincho ProN", PMingLiU, serif
+$ff_sans:  Arial, "WenQuanYi Zen Hei", "LiHei Pro", "Microsoft YaHei", sans-serif
+$line-height: 1.6
+$letter-spacing: 0.05em
+
+$ff_head: "Russo One", "Exo", "Sanchez"
+$lh_head: $line-height - 0.2
+
+
+
+// mixin (use @mixin to import)
+@mixin BGPattern-blocker($color)
+	background-image: linear-gradient(180deg, $color 2px, transparent 2px, transparent 3px, $color 3px, $color 4px, transparent 4px, transparent 5px, $color 5px, $color 6px, transparent 6px, transparent 7px, $color 7px, $color 8px, transparent 8px, transparent 9px, $color 9px, $color 10px, transparent 10px, transparent 11px, $color 11px, $color 12px, transparent 12px, transparent 13px, $color 13px, $color 14px, transparent 14px, transparent 15px, $color 15px, $color 16px, transparent 16px, transparent 17px, $color 17px, $color 18px, transparent 18px, transparent 19px, $color 19px, $color 20px, transparent 20px, transparent 21px, $color 21px, $color 22px, transparent 22px, transparent 23px, $color 23px, $color 24px, transparent 24px, transparent 25px, $color 25px, $color 26px), linear-gradient(90deg, $color 2px, transparent 2px, transparent 3px, $color 3px, $color 4px, transparent 4px, transparent 5px, $color 5px, $color 6px, transparent 6px, transparent 7px, $color 7px, $color 8px, transparent 8px, transparent 9px, $color 9px, $color 10px, transparent 10px, transparent 11px, $color 11px, $color 12px, transparent 12px, transparent 13px, $color 13px, $color 14px, transparent 14px, transparent 15px, $color 15px, $color 16px, transparent 16px, transparent 17px, $color 17px, $color 18px, transparent 18px, transparent 19px, $color 19px, $color 20px, transparent 20px, transparent 21px, $color 21px, $color 22px, transparent 22px, transparent 23px, $color 23px, $color 24px, transparent 24px, transparent 25px, $color 25px, $color 26px)
+	background-size: 26px 26px
+
+
+// class (use @extend to import)
+
+
+
+
+
+
