@@ -9,8 +9,9 @@
 }
 .main-container article h1 {
   font-size: 240%;
-  font-family: "Sanchez";
-  color: #fb6964;
+}
+.main-container article section {
+  width: 100%;
 }
 .main-container article section h2 {
   font-family: "Sanchez";
@@ -26,10 +27,13 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
+  margin-top: 2em;
+  font-family: "Sanchez";
 }
 .main-container article h2 {
   font-family: "Russo One";
   color: #fb6964;
+  font-size: 175%;
 }
 .main-container img {
   position: relative;

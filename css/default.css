@@ -51,23 +51,12 @@ body a:hover {
   color: white;
 }
 
-/* Mobile Main */
-.main {
-  padding: 30px 0px;
-}
-
-.main article h1 {
-  font-size: 2em;
-}
-
-.main aside {
-  color: white;
-  padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-  color: white;
-  padding: 20px 0;
+/* Main header Font-setting */
+.main-container h1 {
+  font-size: 325%;
+  font-family: "Sanchez";
+  color: #fb6964;
+  line-height: 1.4;
 }
 
 .header-container {
@@ -163,6 +152,58 @@ body a:hover {
   transform: translateX(0px);
 }
 
+@media only screen and (max-width: 768px) {
+  .main-container h1 {
+    font-size: 200%;
+  }
+  .main-container article section {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .main-container article section img {
+    width: 100%;
+    padding: 20px;
+  }
+  .main-container h2 {
+    font-size: 125%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-container h1 {
+    margin: 15% 15% 0 0;
+  }
+  .main-container article section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-container article section img {
+    width: 600px;
+    padding: 20px;
+  }
+  .main-container h2 {
+    font-size: 200%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .main-container article section {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+/* Media Query Limited to Dribble-menu */
+@media only screen and (max-width: 768px) {
+  div.dribble-menu ul li {
+    width: 45%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (min-width: 954px) {
+  div.items div.item {
+    padding: 4.2% 2.4%;
+    margin: 0.1%;
+    width: 45%;
+  }
+}
 @media print {
   * {
     background: transparent !important;

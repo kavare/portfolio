@@ -1,11 +1,7 @@
 @import partials/_base
 
-.main-container
-	h1
-		font-size: 300%
-		font-family: nth($ff_head, 3)
-		color: $hot-color
-		margin: 15% 15% 0 0
+.main-container	
+	h1		
 		line-height: $lh-head
 		
 	img[alt="rawant"]
@@ -14,7 +10,6 @@
 		margin-top: 3%
 
 	h2
-		font-size: 150%
 		margin-left: 63%
 		font-family: nth($ff_head, 1)
 		color: $link-color
@@ -22,16 +17,15 @@
 	article		
 		margin-top: 15%
 		
-		h2
-			font-size: 300%
+
+		img:hover
+			border: 3px solid $link_hover-color
+			+border-radius(5px)
+			+transition(all ease 0.28s)
+
+		h1
 			margin-left: 0%			
-			font-family: nth($ff_head, 3)
-			color: $hot-color
-
-		section
-			margin: 0 auto
-			width: 50%
-
+			
 
 		h3
 			font-size: 200%

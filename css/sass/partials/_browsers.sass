@@ -1,52 +1,79 @@
 @media only screen and (min-width: 480px)
-	nav a
-		// float: left
-		// width: 27%
-		display: block
-		margin: 0 1.7%
-		margin-bottom: 0px
+	
+	// nav a
+	// 	// float: left
+	// 	// width: 27%
+	// 	display: block
+	// 	margin: 0 1.7%
+	// 	margin-bottom: 0px
 
-	nav li
-		&:first-child a
-			margin-left: 0px
-		&:last-child a
-			margin-right: 0px
+	// nav li
+	// 	&:first-child a
+	// 		margin-left: 0px
+	// 	&:last-child a
+	// 		margin-right: 0px
 
-	nav ul li
-		display:inline-block
-		float: left		
-		min-width: 110px
+	// nav ul li
+	// 	display:inline-block
+	// 	float: left		
+	// 	min-width: 110px
 
-	.oldie nav a
-		margin: 0 0.7% 
+	// .oldie nav a
+	// 	margin: 0 0.7% 
+@media only screen and (max-width: 768px)
+	.main-container
+		h1
+			font-size: 200%
 
-@media only screen and (min-width: 768px)
-	.header-container,
-	.main aside
-		+pie
-		+box-shadow(0 5px 10px #aaa)
 
-	/* Wide Menu*/ 
-	.title
-		float: left	
-			
-	nav
-		float: right
-		// width: 38%
+		article section
+			width: 75%
+			margin: 0 auto
 
-	/* Wide Main*/ 
-	.main article
-		float: left
-		width: 57%
+			img
+				width: 100%
+				padding: 20px
+		h2
+			font-size: 125%
+		
 
-	.main aside
-		float: right
-		width: 28%
+
+@media only screen and (min-width: 768px)		
+	.main-container
+		h1
+			margin: 15% 15% 0 0
+
+		article section
+			width: 90%
+			margin: 0 auto
+
+			img
+				width: 600px
+				padding: 20px
+		h2
+			font-size: 200%
 
 
 @media only screen and (min-width: 1140px)
-	.wrapper
-		width: 1026px
-		margin: 0 auto
+	.main-container
+		article section
+			margin: 0 auto
+			width: 50%
+
+
+/* Media Query Limited to Dribble-menu*/
+@media only screen and (max-width: 768px)
+	div.dribble-menu
+		ul li
+			width: 45%
+			margin-right: 2%
+
+@media only screen and (min-width: 954px)
+	div.items
+		div.item
+			padding: 4.2% 2.4%
+			margin: 0.1%
+			width: 45%
+
 
 

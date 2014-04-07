@@ -1,9 +1,5 @@
 @import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez);
 .main-container h1 {
-  font-size: 300%;
-  font-family: "Sanchez";
-  color: #fb6964;
-  margin: 15% 15% 0 0;
   line-height: 1.4;
 }
 .main-container img[alt="rawant"] {
@@ -12,7 +8,6 @@
   margin-top: 3%;
 }
 .main-container h2 {
-  font-size: 150%;
   margin-left: 63%;
   font-family: "Russo One";
   color: #1352a2;
@@ -20,15 +15,21 @@
 .main-container article {
   margin-top: 15%;
 }
-.main-container article h2 {
-  font-size: 300%;
-  margin-left: 0%;
-  font-family: "Sanchez";
-  color: #fb6964;
+.main-container article img:hover {
+  border: 3px solid #619fed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all ease;
+  -webkit-transition-delay: 0.28s;
+  -moz-transition: all ease 0.28s;
+  -o-transition: all ease 0.28s;
+  transition: all ease 0.28s;
 }
-.main-container article section {
-  margin: 0 auto;
-  width: 50%;
+.main-container article h1 {
+  margin-left: 0%;
 }
 .main-container article h3 {
   font-size: 200%;
