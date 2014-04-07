@@ -6,6 +6,194 @@
   font-size: 300%;
   font-family: "Sanchez";
   color: #fb6964;
-  margin: 1% 5% 2%;
   line-height: 1.4;
+}
+
+img {
+  float: right;
+}
+
+div.dribble-outer {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+div.dribble-menu {
+  background: #f3eee6;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1px;
+}
+div.dribble-menu ul {
+  list-style: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 0 !important;
+}
+div.dribble-menu ul li {
+  display: inline-block;
+  padding: 26px 6px 15px;
+  margin-right: 20px;
+  width: 128px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out;
+  -webkit-transition-delay: 1s;
+  -moz-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+div.dribble-menu ul i.dribble-icon {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+div.dribble-menu ul span.text {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  color: #333332;
+  margin-top: 20px;
+  font-family: "Exo";
+}
+div.dribble-menu ul li::after {
+  position: absolute;
+  content: " ";
+  height: 17px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+div.dribble-menu ul li:last-child {
+  margin-right: 0;
+}
+div.dribble-menu ul li:nth-child(1)::after {
+  background: #1352a2;
+}
+div.dribble-menu ul li:nth-child(1).selected {
+  background: rgba(19, 82, 162, 0.18);
+}
+div.dribble-menu ul li:nth-child(2)::after {
+  background: #fb6964;
+}
+div.dribble-menu ul li:nth-child(2).selected {
+  background: rgba(251, 105, 100, 0.18);
+}
+div.dribble-menu ul li:nth-child(3)::after {
+  background: #4daf7c;
+}
+div.dribble-menu ul li:nth-child(3).selected {
+  background: rgba(77, 175, 124, 0.18);
+}
+div.dribble-menu ul li:nth-child(4)::after {
+  background: #fa8741;
+}
+div.dribble-menu ul li:nth-child(4).selected {
+  background: rgba(250, 135, 65, 0.18);
+}
+div.dribble-menu ul li:nth-child(5)::after {
+  background: #ffd464;
+}
+div.dribble-menu ul li:nth-child(5).selected {
+  background: rgba(255, 212, 100, 0.18);
+}
+
+div.dribble-bottoms {
+  display: none;
+}
+div.dribble-bottoms img {
+  border: 10px solid white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 560px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+div.items div.item {
+  padding: 4.2% 2.4%;
+  margin: 0.1%;
+  width: 45%;
+  float: left;
+  min-width: 320px;
+  background-color: rgba(240, 241, 238, 0.8);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out;
+  -webkit-transition-delay: 1s;
+  -moz-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+div.items span.text {
+  font-family: "Sanchez";
+  font-size: 150%;
+}
+div.items span.toggle {
+  float: right;
+  position: relative;
+  top: -8px;
+  background: #e4e5e0;
+  width: 75px;
+  height: 34px;
+  display: inline-block;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+div.items span.toggle span.toggle_inner {
+  width: 34px;
+  height: 34px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  border-radius: 17px;
+  background: #676764;
+  display: inline-block;
+  position: absolute;
+}
+div.items span.toggle span.toggle_inner.on {
+  background: #1352a2;
+  right: 0;
+}
+div.items div.item.on {
+  background: #ffd464;
+}
+
+.hide {
+  display: none;
+}
+
+.icon {
+  display: none;
 }

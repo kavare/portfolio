@@ -40,61 +40,234 @@
         <div class="main-container">
             <div class="main wrapper clearfix">  
                 <h1>Skillset</h1>          
-                <div class="control-panel">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                
-                <article>
-                    <section class="skill-html">
-                        <h2>HTML</h2>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </section>
-                    <section class="skill-css">
-                        <h2>CSS</h2>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </section>
-                    <section class="skill-javascript">
-                        <h2>JavaScript</h2>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </section>
-                    <section class="skill-others">
-                        <h2>Others</h2>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </section>
-                </article>
-                                   
+                <div class="dribble-outer">
+                    <div class="dribble-menu">
+                          <ul>
+                                <li class="selected" data-id="HTML5">  
+                                      <i class="fa fa-html5 fa-3x fa-fw dribble-icon"></i>
+                                      <span class="text">HTML5</span>
+                                </li>
+                                <li data-id="CSS3">
+                                      <i class="fa fa-css3 fa-3x fa-fw dribble-icon"></i>
+                                      <span class="text">CSS3</span>
+                                </li>
+                                <li data-id="JavaScript">
+                                      <i class="fa fa-code fa-3x fa-fw dribble-icon"></i>
+                                      <span class="text">JavaScript</span>
+                                </li>
+                                <li data-id="Frameworks">
+                                      <i class="fa fa-stack-overflow fa-3x fa-fw dribble-icon"></i>
+                                      <span class="text">Frameworks</span>
+                                </li>
+                                <li data-id="Tools">
+                                      <i class="fa fa-keyboard-o fa-3x fa-fw dribble-icon"></i>
+                                      <span class="text">Tools</span>
+                                </li>                                
+                          </ul>
+                    </div>
+
+                    <div id="HTML5" class="dribble-bottoms">
+                          <div class="items">
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">HTML5 Tags</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="unable">
+                                      <span class="icon">1</span>
+                                      <span class="text">HTML5 Canvas</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>                                                                                     
+                                <div class="item" data-skill="unable">
+                                      <span class="icon">1</span>
+                                      <span class="text">Haml or Jade</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">Responsive Web Design</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>                                   
+                          </div>
+                    </div>
+    
+                    <div id="CSS3" class="dribble-bottoms">
+                            <div class="items">
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">CSS3 Animations</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">SASS/SCSS</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>          
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">Compass</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="unable">
+                                      <span class="icon">1</span>
+                                      <span class="text">LESS</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">IE Hacks</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">SMACSS/OOCSS</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>                                                             
+                          </div>
+                    </div>
+    
+                    <div id="JavaScript" class="dribble-bottoms">
+                            <div class="items">
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">Pure JavaScript</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">jQuery Libs</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>                                
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">Ajax</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>                                
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">API Implementation</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="unable">
+                                      <span class="icon"></span>
+                                      <span class="text">AngularJS</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="unable">
+                                      <span class="icon"></span>
+                                      <span class="text">Grunt</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                          </div>
+                    </div>
+
+                    <div id="Frameworks" class="dribble-bottoms">
+                            <div class="items">
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">BootStrap</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">960 grid system</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">Sasy</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">WordPress</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                          </div>
+                    </div>
+
+                    <div id="Tools" class="dribble-bottoms">
+                            <div class="items">
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">SublimeText 2</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon">1</span>
+                                      <span class="text">Photoshop</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">Illustrator</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                                <div class="item" data-skill="able">
+                                      <span class="icon"></span>
+                                      <span class="text">Git</span>
+                                      <span class="toggle">
+                                            <span class="toggle_inner"></span>
+                                      </span>
+                                </div>
+                          </div>
+                    </div>
             </div> <!-- #main -->
-<!--             <footer class="wrapper clearfix">
-                <h3>2014 &copy; Aaron Hsieh</h3>
-            </footer> -->
         </div> <!-- #main-container -->
+        <img src="img/neko.png" alt="footerimage">         
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/vendor/jquery.timelinr-0.9.54.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/dribble-menu.js"></script>
         <script>
             
 
