@@ -14,5 +14,24 @@
 .main-container h2 {
   font-size: 150%;
   margin-left: 63%;
+  font-family: "Russo One";
   color: #1352a2;
+}
+.main-container article {
+  margin-top: 20%;
+}
+.main-container article h2 {
+  font-size: 300%;
+  margin-left: 0%;
+  font-family: "Sanchez";
+  color: #fb6964;
+}
+.main-container article section {
+  margin: 0 auto;
+  width: 50%;
+}
+.main-container article h3 {
+  font-size: 200%;
+  margint-top: 5%;
+  margin-bottom: 0%;
 }
