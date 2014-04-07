@@ -1,31 +1,41 @@
 @import url(http:\/\/fonts.googleapis.com/css?family=Russo+One|Exo|Sanchez);
+.main-container {
+  width: 95%;
+}
+.main-container h1 {
+  margin-top: 5%;
+}
+
 /* jQuery TimeLinr Sass Modification */
 #timeline {
-  width: 900px;
+  width: 100%;
+  height: 700px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 40px auto;
   position: relative;
-  background: url("../img/dot.gif") left 61px repeat-x;
+  background: url("../../../img/dot.gif") 3px top repeat-y;
 }
 
 #dates {
-  width: 900px;
-  height: 60px;
+  width: 20%;
+  height: 700px;
   overflow: hidden;
+  float: left;
+  padding-left: 0px;
 }
 #dates li {
   list-style: none;
-  float: left;
-  width: 130px;
-  height: 50px;
+  width: 20%;
+  height: 100px;
   font-size: 24px;
-  text-align: center;
-  background: url("../img/biggerdot.png") center bottom no-repeat;
+  padding-left: 10px;
+  background: url("../../../img/biggerdot.png") left center no-repeat;
 }
 #dates a {
   font-family: "Exo";
-  line-height: 38px;
-  padding-bottom: 10px;
+  display: block;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 #dates .selected {
   font-family: "Russo One";
@@ -39,18 +49,21 @@
 }
 
 #issues {
-  width: 900px;
+  width: 70%;
+  height: 700px;
   overflow: hidden;
+  float: left;
 }
 #issues li {
-  width: 900px;
+  width: 100%;
+  height: 700px;
   list-style: none;
-  float: left;
 }
 #issues li img {
-  float: left;
-  margin: 30px 40px 20px 50px;
-  background: transparent;
+  display: block;
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
   zoom: 1;
@@ -63,20 +76,25 @@
   -ms-transform: scale(0.7, 0.7);
   -o-transform: scale(0.7, 0.7);
   transform: scale(0.7, 0.7);
+  -webkit-border-radius: 180px;
+  -moz-border-radius: 180px;
+  -ms-border-radius: 180px;
+  -o-border-radius: 180px;
+  border-radius: 180px;
 }
 #issues li h2 {
-  margin: 10px 0;
-  font-size: 250%;
+  margin: 40px 0 10px;
+  font-size: 175%;
   color: #ffd464;
   font-family: "Exo";
   text-shadow: #ca9200 1px 1px 2px;
 }
 #issues li p {
   font-size: 125%;
-  margin-top: 0;
-  float: left;
-  width: 434px;
+  margin: 10px 20px;
+  width: 100%;
   font-family: "Sanchez";
+  float: left;
 }
 #issues li.selected img {
   -webkit-transform: scale(1.1, 1.1);
@@ -88,59 +106,86 @@
 
 #grad_left,
 #grad_right {
-  width: 90px;
-  height: 450px;
+  width: 500px;
+  height: 80px;
   position: absolute;
-  top: 0;
 }
 
 #grad_left {
-  left: 0;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
-  background: -webkit-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: -moz-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: -o-linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
-  -pie-background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: linear-gradient(left, #f0f1ee, rgba(240, 241, 238, 0.8));
+  top: 0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
+  background: -webkit-linear-gradient(top, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -moz-linear-gradient(top, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -o-linear-gradient(top, #f0f1ee, rgba(240, 241, 238, 0.8));
+  -pie-background: linear-gradient(top, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: linear-gradient(top, #f0f1ee, rgba(240, 241, 238, 0.8));
 }
 
 #grad_right {
-  right: 1;
-  background: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
-  background: -webkit-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: -moz-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: -o-linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
-  -pie-background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
-  background: linear-gradient(right, #f0f1ee, rgba(240, 241, 238, 0.8));
+  bottom: 0;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f0f1ee), color-stop(100%, rgba(240, 241, 238, 0.8)));
+  background: -webkit-linear-gradient(bottom, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -moz-linear-gradient(bottom, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: -o-linear-gradient(bottom, #f0f1ee, rgba(240, 241, 238, 0.8));
+  -pie-background: linear-gradient(bottom, #f0f1ee, rgba(240, 241, 238, 0.8));
+  background: linear-gradient(bottom, #f0f1ee, rgba(240, 241, 238, 0.8));
 }
 
 #next,
 #prev {
   position: absolute;
-  top: 0;
   font-size: 70px;
   top: 170px;
-  width: 22px;
-  height: 38px;
-  background-position: 0 0;
+  width: 38px;
+  height: 22px;
+  background-position: 0 -44px;
   background-repeat: no-repeat;
   text-indent: -9999px;
   overflow: hidden;
+  right: 10%;
+}
+#next:hover,
+#prev:hover {
+  background-position: 0 0;
 }
 
 #next {
-  right: 0;
-  background-image: url("../img/next.png");
-  background-position: 0 -76px;
+  bottom: 0;
+  background-image: url("../../../img/next_v.png");
 }
 
 #prev {
-  left: 0;
-  background-image: url("../img/prev.png");
-  background-position: 0 -76px;
+  top: 0;
+  background-image: url("../../../img/prev_v.png");
 }
 
 #next.disabled,
 #prev.disabled {
   opacity: 0.2;
+}
+
+@media only screen and (max-width: 768px) {
+  #dates li {
+    width: 20%;
+    height: 100px;
+    font-size: 125%;
+    padding-left: 10px;
+    background: url("../../../img/biggerdot.png") left center no-repeat;
+  }
+  #dates a {
+    font-family: "Exo";
+    display: block;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  #dates .selected {
+    font-family: "Russo One";
+    color: #fb6964;
+    -webkit-transition: all ease-in-out;
+    -webkit-transition-delay: 0.28s;
+    -moz-transition: all ease-in-out 0.28s;
+    -o-transition: all ease-in-out 0.28s;
+    transition: all ease-in-out 0.28s;
+    font-size: 125%;
+  }
 }

@@ -10,10 +10,11 @@
 /* jQuery TimeLinr Sass Modification */
 #timeline {
   width: 900px;
+  height: 600px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
-  background: url("/img/dot.gif") left 61px repeat-x;
+  background: url("../../../img/dot.gif") left 61px repeat-x;
 }
 
 #dates {
@@ -28,7 +29,7 @@
   height: 50px;
   font-size: 24px;
   text-align: center;
-  background: url("/img/biggerdot.png") center bottom no-repeat;
+  background: url("../../../img/biggerdot.png") center bottom no-repeat;
 }
 #dates a {
   font-family: "Exo";
@@ -58,6 +59,8 @@
 #issues li img {
   float: left;
   margin: 30px 40px 20px 50px;
+  width: 256px;
+  height: 256px;
   background: transparent;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
@@ -138,13 +141,13 @@
 
 #next {
   right: 0;
-  background-image: url("/img/next.png");
+  background-image: url("../../../img/next.png");
   background-position: 0 -76px;
 }
 
 #prev {
   left: 0;
-  background-image: url("/img/prev.png");
+  background-image: url("../../../img/prev.png");
   background-position: 0 -76px;
 }
 

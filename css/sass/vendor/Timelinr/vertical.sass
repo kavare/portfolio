@@ -1,36 +1,48 @@
 @import partials/_base
+
+.main-container
+	width: 95%
+
+	h1
+		margin-top: 5%
+
 /* jQuery TimeLinr Sass Modification */
-$tldefault_width: 900px
-$tldefault_height: 600px
-$tldefault_issueheight: $tldefault_height - 150px
+
+$tldefault_width: 100%
+$tldefault_height: 700px
+$tldefault_issuewidth: $tldefault_width - 30%
+$tldefault_dateswidth:  20% //100px
 
 #timeline
 	width: $tldefault_width
-	// height: $tldefault_height
+	height: $tldefault_height
 	overflow: hidden
-	margin: 0 auto
+	margin: 40px auto
 	position: relative
-	background: url('../img/dot.gif') left 61px repeat-x
+	background: url('../../../img/dot.gif') 3px top repeat-y
 
 
 #dates
-	width: $tldefault_width
-	height: 60px
+	width: $tldefault_dateswidth
+	height: $tldefault_height
 	overflow: hidden
+	float: left
+	padding-left: 0px
 
 	li
-		list-style: none
-		float: left
-		width: 130px
-		height: 50px
+		list-style: none		
+		width: $tldefault_dateswidth
+		height: 100px
 		font-size: 24px
-		text-align: center
-		background: url('../img/biggerdot.png') center bottom no-repeat
+		padding-left: 10px
+		background: url('../../../img/biggerdot.png') left center no-repeat
 
 	a
 		font-family: nth($ff_head, 2)
-		line-height: 38px
-		padding-bottom: 10px
+		display: block
+		padding-top: 30px
+		padding-left: 10px
+		
 
 	.selected
 		font-family: nth($ff_head, 1)
@@ -39,86 +51,110 @@ $tldefault_issueheight: $tldefault_height - 150px
 		font-size: 150%
 
 #issues
-	width: $tldefault_width
-	// height: $tldefault_issueheight
+	width: $tldefault_issuewidth
+	height: $tldefault_height
 	overflow: hidden
-	
+	float: left
 	
 	li
 		width: $tldefault_width
-		// height: $tldefault_issueheight
+		height: $tldefault_height
 		list-style: none
-		float: left
-
-		img
-			float: left
-			margin: 30px 40px 20px 50px			
-			background: transparent
+		
+		img			
+			display: block
+			height: 180px
+			width: 180px
+			margin: 0 auto
+			// float: right
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)" /* IE 8 */   
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)/* IE 6 & 7 */      
 			zoom: 1
 			+transition(all 1s ease-in-out)
 			+transform(scale(0.7,0.7))
+			+border-radius(180px)
 				
 		h2
-			margin: 10px 0
-			font-size: 250%
+			margin: 40px 0 10px
+			font-size: 175%
 			color: $header-color
 			font-family: nth($ff_head, 2)
 			+text-shadow(darken($header-color, 30%) 1px 1px 2px)
 
 		p
 			font-size: 125%
-			margin-top: 0
-			float: left
-			width: $tldefault_width - 466px
+			margin: 10px 20px			
+			width: $tldefault_width
 			font-family: nth($ff_head, 3)
-
-
+			float: left
 	
 	li.selected img
 		+transform(scale(1.1,1.1))
 
+// #grad_left for #grad_top; #grad_right for #grad_bottom
 
 #grad_left,
 #grad_right
-	width: 90px
-	height: $tldefault_issueheight
+	width: 500px
+	height: 80px
 	position: absolute
-	top: 0
 
 #grad_left
-	left: 0
-	+background(linear-gradient(left, rgba($background-color, 1), rgba($background-color, .8)))
+	top: 0
+	+background(linear-gradient(top, rgba($background-color, 1), rgba($background-color, .8)))
 	
 
 #grad_right
-	right: 1
-	+background(linear-gradient(right, rgba($background-color, 1), rgba($background-color, .8)))
+	bottom: 0
+	+background(linear-gradient(bottom, rgba($background-color, 1), rgba($background-color, .8)))
 			
 #next,
 #prev
-	position: absolute
-	top: 0
+	position: absolute	
 	font-size: 70px
 	top: 170px
-	width: 22px
-	height: 38px
-	background-position: 0 0
+	width: 38px
+	height: 22px
+	background-position: 0 -44px
 	background-repeat: no-repeat
 	text-indent: -9999px
 	overflow: hidden
+	right: 10%
+	&:hover
+		background-position: 0 0
 
 #next
-	right: 0
-	background-image: url('../img/next.png')
-	background-position: 0 -76px
-
+	bottom: 0
+	background-image: url('../../../img/next_v.png')
+	
 #prev
-	left: 0
-	background-image: url('../img/prev.png')
-	background-position: 0 -76px
+	top: 0
+	background-image: url('../../../img/prev_v.png')
 
 #next.disabled,
 #prev.disabled
 	opacity: 0.2
+
+
+@media only screen and (max-width: 768px)
+	#dates
+		li	
+			width: $tldefault_dateswidth
+			height: 100px
+			font-size: 125%
+			padding-left: 10px
+			background: url('../../../img/biggerdot.png') left center no-repeat
+	
+		a
+			font-family: nth($ff_head, 2)
+			display: block
+			padding-top: 30px
+			padding-left: 10px
+		
+
+		.selected
+			font-family: nth($ff_head, 1)
+			color: $hot-color
+			+transition(all ease-in-out 0.28s)
+			font-size: 125%
+
