@@ -24,13 +24,14 @@ includeLinkStyle(linrStyle);
 
 //Customized Timelinr Setting   
 $(function(){
-    $('#timeline').timelinr({
-        orientation:    linrOrient,
-        issuesSpeed:    300,
-        datesSpeed:     100,
-        arrowKeys:      'true',
-        startAt:        1,
-        autoPlayPause:  5000 
-    });
+    // $().timelinr({
+    //     orientation:    linrOrient,
+    //     issuesSpeed:    300,
+    //     datesSpeed:     100,
+    //     arrowKeys:      'true',
+    //     startAt:        1,
+    //     autoPlayPause:  5000 
+    // });
+$().timelinr();
 });
 
