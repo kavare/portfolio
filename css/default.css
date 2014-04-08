@@ -60,7 +60,7 @@ body a:hover {
 }
 
 /* Sidenav color setting */
-.header-container i.fa-spin {
+.header-container .is-here {
   color: #1352a2;
 }
 
@@ -110,7 +110,8 @@ body a:hover {
   color: #619fed;
 }
 .header-container nav a span {
-  margin-left: 20px;
+  margin-left: 15px;
+  font-size: 115%;
 }
 
 /* Applying javascript to bind hover event */

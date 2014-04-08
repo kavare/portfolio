@@ -25,20 +25,18 @@
 
 	nav a
 		display: block 
-		// margin-left: 5px
 		width: 200px		
 		padding: 15px 0px
 		color: rgba(255,255,255,1)
 
 		&:hover
 			text-decoration: none
-			+transition(all ease 0.28s)
-			// +transform(origin(right bottom))
-			// +transform(translateX(580px))
+			+transition(all ease 0.28s)			
 			+transform(scale(1.7))
 			color: $link_hover-color
 		span
-			margin-left: 20px
+			margin-left: 15px
+			font-size: 115%
 
 /* Applying javascript to bind hover event */
 .header-container.is-expanded
