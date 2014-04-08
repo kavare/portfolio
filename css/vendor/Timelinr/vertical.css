@@ -95,9 +95,6 @@
   width: 100%;
   font-family: "Sanchez";
   float: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 #issues li.selected img {
   -webkit-transform: scale(1.1, 1.1);
