@@ -11,18 +11,7 @@ if (sWidth >= 1024) {
     linrStyle = 'css/vendor/Timelinr/vertical.css';
 }
 
-//Customized Timelinr Setting   
-$(function(){
-    $().timelinr({
-        orientation:    linrOrient,
-        issuesSpeed:    300,
-        datesSpeed:     100,
-        arrowKeys:      'true',
-        startAt:        1,
-        // autoPlay:       'true',
-        autoPlayPause:  5000 
-    });
-});
+
 
 //Changing Stylesheet according to device-width
 function includeLinkStyle(url) {
@@ -34,3 +23,22 @@ function includeLinkStyle(url) {
 }
 
 includeLinkStyle(linrStyle);
+
+//Customized Timelinr Setting   
+$(function(){
+
+
+
+    $().timelinr({
+        orientation:    linrOrient,
+        issuesSpeed:    300,
+        datesSpeed:     100,
+        arrowKeys:      'true',
+        startAt:        1,
+        // autoPlay:       'true',
+        autoPlayPause:  5000 
+    });
+
+
+
+});
