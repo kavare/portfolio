@@ -25,12 +25,12 @@ $(function(){
 });
 
 //Changing Stylesheet according to device-width
-function includeLinkStyle(urll) {
+function includeLinkStyle(url) {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = urll;
+    link.href = url;
     document.getElementsByTagName('head')[0].appendChild(link);
 }
 
-includeLinkStyle(linrStyle);
+includeLinkStyle('css/vendor/Timelinr/horizontal.css');
