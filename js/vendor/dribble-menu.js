@@ -14,7 +14,6 @@ $(function () {
 	});
 
 	//default "on" settings
-	$('[data-id="HTML5"]').click();
-	$('[data-skill="able"').addClass('on').find('.toggle_inner').addClass('on');
-
+	$('[data-id="HTML5"]').click();	
+	$('.dribble-bottoms div[data-skill="able"]').addClass('on').find('.toggle_inner').addClass('on');
 });
