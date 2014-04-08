@@ -141,11 +141,10 @@ div.items div.item {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-transition: all ease-in-out;
-  -webkit-transition-delay: 1s;
-  -moz-transition: all ease-in-out 1s;
-  -o-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 div.items span.text {
   font-family: "Sanchez";
