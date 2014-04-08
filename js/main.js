@@ -1,28 +1,18 @@
 //Sidebar sliding using toggle class to realize. Classes are defined in modules/_sidenav.sass
 
 $(function () {
-	$('.header-container').hover(		
-	function(event) {
-		var $this = $(this),
-			$main = $('.main-container');		
+	var $sideNav = $('.header-container'),
+		$main = $('.main-container');
 
-		// $this.css('background-color', 'navy');
-		$this.addClass('is-expanded');
-		$main.addClass('is-translated');
-		event.stopProporgation;
-	}, 
-	function() {
-		var $this = $(this),
-			$main = $('.main-container');
-
-		// $this.css('background-color', 'violet');
-		$this.removeClass('is-expanded');
-		$main.removeClass('is-translated');
-		event.stopProporgation; 
+	$sideNav.hover(		
+		function() {
+			$sideNav.addClass('is-expanded');
+			$main.addClass('is-translated');		
+		}, 
+		function() {
+			$sideNav.removeClass('is-expanded');
+			$main.removeClass('is-translated');		
 	});
 });
 
-//Setting nav color for the current page
-$(function () {	
-	$('.fa-spin').css('color', 'rgba(19,82,162,1)');
-});
+

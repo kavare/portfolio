@@ -42,19 +42,19 @@
 
 /* Applying javascript to bind hover event */
 .header-container.is-expanded
-	+transition(width ease-in-out 0.28s)
+	+transition(width 0.28s ease-in-out)
 	width: 200px
 
 .header-container
-	+transition(width ease-in-out 0.28s)
+	+transition(width 0.28s ease-in-out)
 
 .main-container.is-translated
-	+transition(all ease-in-out 0.28s)
 	+transform(translateX(200px))
+	+transition(transform 0.28s ease-in-out)
 
 .main-container
-	+transition(all ease-in-out 0.28s)
 	+transform(translateX(0px))
+	+transition(transform 0.28s ease-in-out)
 	
 
 

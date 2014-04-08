@@ -59,6 +59,11 @@ body a:hover {
   line-height: 1.4;
 }
 
+/* Sidenav color setting */
+.header-container i.fa-spin {
+  color: #1352a2;
+}
+
 .header-container {
   position: fixed;
   left: 0;
@@ -110,46 +115,42 @@ body a:hover {
 
 /* Applying javascript to bind hover event */
 .header-container.is-expanded {
-  -webkit-transition: width ease-in-out;
-  -webkit-transition-delay: 0.28s;
-  -moz-transition: width ease-in-out 0.28s;
-  -o-transition: width ease-in-out 0.28s;
-  transition: width ease-in-out 0.28s;
+  -webkit-transition: width 0.28s ease-in-out;
+  -moz-transition: width 0.28s ease-in-out;
+  -o-transition: width 0.28s ease-in-out;
+  transition: width 0.28s ease-in-out;
   width: 200px;
 }
 
 .header-container {
-  -webkit-transition: width ease-in-out;
-  -webkit-transition-delay: 0.28s;
-  -moz-transition: width ease-in-out 0.28s;
-  -o-transition: width ease-in-out 0.28s;
-  transition: width ease-in-out 0.28s;
+  -webkit-transition: width 0.28s ease-in-out;
+  -moz-transition: width 0.28s ease-in-out;
+  -o-transition: width 0.28s ease-in-out;
+  transition: width 0.28s ease-in-out;
 }
 
 .main-container.is-translated {
-  -webkit-transition: all ease-in-out;
-  -webkit-transition-delay: 0.28s;
-  -moz-transition: all ease-in-out 0.28s;
-  -o-transition: all ease-in-out 0.28s;
-  transition: all ease-in-out 0.28s;
   -webkit-transform: translateX(200px);
   -moz-transform: translateX(200px);
   -ms-transform: translateX(200px);
   -o-transform: translateX(200px);
   transform: translateX(200px);
+  -webkit-transition: -webkit-transform 0.28s ease-in-out;
+  -moz-transition: -moz-transform 0.28s ease-in-out;
+  -o-transition: -o-transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out;
 }
 
 .main-container {
-  -webkit-transition: all ease-in-out;
-  -webkit-transition-delay: 0.28s;
-  -moz-transition: all ease-in-out 0.28s;
-  -o-transition: all ease-in-out 0.28s;
-  transition: all ease-in-out 0.28s;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.28s ease-in-out;
+  -moz-transition: -moz-transform 0.28s ease-in-out;
+  -o-transition: -o-transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
