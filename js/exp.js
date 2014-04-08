@@ -30,7 +30,6 @@ $(function(){
         datesSpeed:     100,
         arrowKeys:      'true',
         startAt:        1,
-        // autoPlay:       'true',
         autoPlayPause:  5000 
     });
 });
