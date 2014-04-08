@@ -3,7 +3,7 @@ var sWidth = $(window).width(),
     linrOrient,
     linrStyle;
 
-if (sWidth > 1024) {
+if (sWidth >= 1024) {
     linrOrient = 'horizontal';
     linrStyle = 'css/vendor/Timelinr/horizontal.css';
 } else {
