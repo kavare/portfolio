@@ -31,6 +31,6 @@ $(function(){
         arrowKeys:      'true',
         startAt:        1,
         autoPlayPause:  5000 
-    })
+    });
 });
 
