@@ -2,7 +2,7 @@
 var linrOrient,
     linrStyle;
 
-if (screen.width >= 1000) {
+if (screen.width >= 1020) {
     linrOrient = 'horizontal';
     linrStyle = 'css/vendor/Timelinr/horizontal.css';
 } else {
