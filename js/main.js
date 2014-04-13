@@ -15,4 +15,8 @@ $(function () {
 	});
 });
 
-
+//Open new window when click <a href=""> that are outward links.
+$(function() {
+	var outLinks = $('a[href^=http]');
+	outLinks.attr('target', '_blank');
+});
